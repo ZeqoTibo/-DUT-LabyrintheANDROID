@@ -4,7 +4,7 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
-
+import android.util.Log;
 
 
 import static com.example.labyrintheiza.MainActivity.ballParams;
@@ -32,6 +32,7 @@ public class Accelerometer implements SensorEventListener {
         if (sensorEvent.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
             float newX = -sensorEvent.values[0];
             float newY = sensorEvent.values[1];
+            Log.e("accelerometer","New x = "+newX+ " New y = "+newY);
 
             if (MainActivity.ball.getBallX() < 0 || MainActivity.ball.getBallX() > (width - ballParams.width)) {
                 if (MainActivity.ball.getBallX() < 0) {
@@ -43,7 +44,7 @@ public class Accelerometer implements SensorEventListener {
                 }
 
             } else {
-                MainActivity.ball.setBallX(MainActivity.ball.getBallX() + newX );
+                MainActivity.ball.setBallX((float) (MainActivity.ball.getBallX() + newX ));
             }
 
             if (MainActivity.ball.getBallY() < 0 || MainActivity.ball.getBallY() > (heigth - ballParams.height )) {
@@ -52,11 +53,11 @@ public class Accelerometer implements SensorEventListener {
                 }
 
                 if (MainActivity.ball.getBallY() > (heigth - ballParams.height)) {
-                    MainActivity.ball.setBallY(heigth - ballParams.height );
+                    MainActivity.ball.setBallY(heigth - ballParams.height  );
                 }
 
             } else {
-                MainActivity.ball.setBallY((float) (MainActivity.ball.getBallY() + newY));
+                MainActivity.ball.setBallY((float) (MainActivity.ball.getBallY() + newY ));
             }
         }
     }

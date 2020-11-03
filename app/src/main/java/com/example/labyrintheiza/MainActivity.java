@@ -8,7 +8,6 @@ import android.widget.RelativeLayout;
 
 
 public class MainActivity extends AppCompatActivity {
-
     public static Ball ball;
     private RelativeLayout fenetrePrincipale;
     private Accelerometer accelerometer;
@@ -27,20 +26,14 @@ public class MainActivity extends AppCompatActivity {
 
         fenetrePrincipale = findViewById(R.id.fenetrePrincipale);
         ball = new Ball(this);
-        ball.setBallX(100);
-        ball.setBallY(100);
-        ball.init(fenetrePrincipale);
-
-
         labyrinth = new Labyrinth(this);
-        labyrinth.init(2,fenetrePrincipale);
-
         accelerometer = new Accelerometer(this);
+
+        ball.init(fenetrePrincipale);
+        labyrinth.init(fenetrePrincipale);
         accelerometer.start();
 
     }
-
-
 
 
 }

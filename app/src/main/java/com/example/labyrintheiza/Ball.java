@@ -10,9 +10,12 @@ public class Ball {
     private ImageView ball;
 
 
+
     public Ball(MainActivity context) {
         this.ball = new ImageView(context);
         this.ball.setImageResource(R.drawable.ball);
+        this.ball.setX(50);
+        this.ball.setY(50);
     }
 
     public ImageView getBall() {
