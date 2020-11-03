@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private Labyrinth labyrinth;
     public static int width;
     public static int heigth;
-    public static ViewGroup.LayoutParams ballParams = new ViewGroup.LayoutParams(100, 100);
+
 
 
     @Override
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         heigth = getResources().getDisplayMetrics().heightPixels;
 
         fenetrePrincipale = findViewById(R.id.fenetrePrincipale);
-        ball = new Ball(this);
+        ball = new Ball(this,50,50,100,100);
         labyrinth = new Labyrinth(this);
         accelerometer = new Accelerometer(this);
 

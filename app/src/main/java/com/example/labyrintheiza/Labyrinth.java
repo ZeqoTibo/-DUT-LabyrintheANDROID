@@ -10,7 +10,7 @@ import java.util.List;
 
 public class Labyrinth {
     MainActivity context;
-    private List<Mur> listDeMur = new ArrayList<>();
+    public static List<Mur> listDeMur = new ArrayList<>();
 
     public Labyrinth(MainActivity context) {
         this.context = context;

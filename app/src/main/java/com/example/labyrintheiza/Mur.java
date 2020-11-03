@@ -17,18 +17,18 @@ public class Mur {
 
     public Mur(MainActivity context, int x, int y, int width, int height) {
         this.context = context;
-
         imageViewMur = new ImageView(context);
         imageViewMur.setLayoutParams(paramMur);
         paramMur.height = height;
         this.x = x;
         this.y =y;
+        this.width = width;
+        this.height = height;
         paramMur.width = width;
         imageViewMur.setX(x);
         imageViewMur.setY(y);
         imageViewMur.setBackgroundResource(R.drawable.rectanglehorizontale);
-        this.width = width;
-        this.height = height;
+
     }
 
     public void setX(int x) {

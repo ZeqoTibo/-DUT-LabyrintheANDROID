@@ -7,7 +7,7 @@ import android.hardware.SensorManager;
 import android.util.Log;
 
 
-import static com.example.labyrintheiza.MainActivity.ballParams;
+import static com.example.labyrintheiza.Ball.ballParams;
 import static com.example.labyrintheiza.MainActivity.heigth;
 import static com.example.labyrintheiza.MainActivity.width;
 import static android.content.Context.SENSOR_SERVICE;
