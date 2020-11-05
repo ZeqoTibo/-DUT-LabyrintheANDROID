@@ -5,7 +5,7 @@ import static com.example.labyrintheiza.MainActivity.ball;
 import static com.example.labyrintheiza.Labyrinth.listDeMur;
 
 public class CollisionMur {
-
+/*
     public void testCollision(){
 
         for (listDeMur:
@@ -16,4 +16,6 @@ public class CollisionMur {
             
         }
     }
+
+ */
 }

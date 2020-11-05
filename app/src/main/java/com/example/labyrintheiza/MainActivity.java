@@ -2,10 +2,7 @@ package com.example.labyrintheiza;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.ViewGroup;
 import android.widget.RelativeLayout;
-
-
 
 public class MainActivity extends AppCompatActivity {
     public static Ball ball;
@@ -16,11 +13,11 @@ public class MainActivity extends AppCompatActivity {
     public static int heigth;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         width = getResources().getDisplayMetrics().widthPixels;
         heigth = getResources().getDisplayMetrics().heightPixels;
 
