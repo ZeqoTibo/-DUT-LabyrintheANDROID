@@ -62,7 +62,7 @@
         android:layout_width="328dp"
         android:layout_height="74dp"
         android:gravity="center"
-        android:text="Le but du jeu est tout simple, \n c'est un labyrinthe avec une bille qu'il faut ammener jusqu'a l'arrivé, en bougeant simplement son telephone"
+        android:text="Le but du jeu est tout simple.\n Arriver le plus rapidement à la fin du labyrinthe sans toucher un seul mur, sinon gare a vous! "
         android:textColor="#000000"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"

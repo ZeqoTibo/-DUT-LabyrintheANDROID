@@ -30,9 +30,9 @@ public class MainActivity extends AppCompatActivity {
 
         fenetrePrincipale = findViewById(R.id.fenetrePrincipale);
 
-        ball = new Ball(this,50,50,100,100);
+        ball = new Ball(this,16,28,50,50);
         labyrinth = new Labyrinth(this);
-        accelerometer = new Accelerometer(this);
+        accelerometer = new Accelerometer(this,labyrinth);
 
         Intent intent = getIntent();
         if(intent !=null){
