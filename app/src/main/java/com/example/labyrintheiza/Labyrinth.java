@@ -7,16 +7,21 @@ import android.widget.RelativeLayout;
 
 import java.util.ArrayList;
 import java.util.List;
+import static com.example.labyrintheiza.MainActivity.heigth;
+import static com.example.labyrintheiza.MainActivity.width;
+
 
 public class Labyrinth {
     MainActivity context;
     public static List<Mur> listDeMur = new ArrayList<>();
 
+
     public Labyrinth(MainActivity context) {
         this.context = context;
     }
 
-    public void init(final RelativeLayout relativeLayout) {
+    public void init(final RelativeLayout relativeLayout) { //150
+
 
         Mur mur = new Mur(context, 0, 150,500,100);
         Mur mur2 = new Mur(context, 700, 150,500,100);
@@ -76,9 +81,9 @@ public class Labyrinth {
         relativeLayout.addView(mur15.getImageViewMur());
         relativeLayout.addView(mur16.getImageViewMur());
         relativeLayout.addView(mur17.getImageViewMur());
+    }
 
-
-
-
+    public List<Mur> getMurs() {
+        return listDeMur;
     }
 }
